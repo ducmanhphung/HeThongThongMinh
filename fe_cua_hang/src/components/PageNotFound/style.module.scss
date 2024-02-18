@@ -1,0 +1,26 @@
+@import "./src/scss/importer";
+
+.pageWrapper {
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .header {
+    }
+    .body {
+      > * {
+        display: block;
+      }
+      h1 {
+        font-size: 4rem;
+        color: $textColor;
+      }
+      a {
+        display: block;
+      }
+    }
+    .footer {
+    }
+  }
+}

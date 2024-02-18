@@ -1,0 +1,68 @@
+@import "./src/scss/importer";
+
+.pageWrapper {
+  .waiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  .page {
+    .body {
+      padding: 20px;
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .info {
+        background-color: $blueColor;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 20px;
+        color: $whiteColor;
+
+        span {
+          display: block;
+        }
+        .tenThuoc {
+          font-size: 2rem;
+        }
+        .kinhDoanh {
+        }
+        .daBan {
+        }
+        .tong {
+        }
+        .gia {
+        }
+        .area {
+          margin-top: 20px;
+          .title {
+            font-size: 1.2rem;
+          }
+          .items {
+            width: 100%;
+            background-color: $grayColor;
+            border-radius: 10px;
+            padding: 10px;
+            color: $textColor;
+            .duocChats {
+              margin: 0;
+              .duocChat {
+                span {
+                  display: inline-block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

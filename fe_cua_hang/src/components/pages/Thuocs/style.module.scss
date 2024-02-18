@@ -1,0 +1,45 @@
+@import "./src/scss/importer";
+
+.thuocPageWrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  .thuocPage {
+    .header {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+    .body {
+      .options {
+        background-color: $grayColor;
+        margin: 0px 10px;
+        padding: 20px;
+        .items {
+          .item {
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .danhSachThuoc {
+        padding: 20px;
+
+        .waiting {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+      }
+    }
+    .waittingLoadMore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

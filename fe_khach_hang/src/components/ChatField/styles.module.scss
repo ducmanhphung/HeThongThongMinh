@@ -1,0 +1,31 @@
+@import "./src/scss/importer";
+
+.chatFieldWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0px;
+  &.userContent {
+    justify-content: flex-end;
+    .content {
+      background-color: $blueColor;
+      width: fit-content;
+      color: $whiteColor;
+      margin-left: 10%;
+    }
+  }
+  &.storeContent {
+    justify-content: flex-start;
+    .content {
+      background-color: $grayColor;
+      width: fit-content;
+      color: $blackColorLv1;
+      margin-right: 10%;
+    }
+  }
+  width: 100%;
+  .content {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+}

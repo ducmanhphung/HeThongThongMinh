@@ -1,0 +1,25 @@
+@import "./src/scss/importer";
+
+.pageWrapper {
+  .page {
+    padding: 20px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      border: none;
+      outline: none;
+      padding: 20px;
+      background-color: $orangeColor;
+      color: $whiteColor;
+      border-radius: 10px;
+    }
+    .notify {
+      padding: 20px;
+    }
+  }
+}

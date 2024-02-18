@@ -1,0 +1,94 @@
+@import "./src/scss/importer";
+.chatFormWrapper {
+  @extend %flex_col_between;
+  color: $whiteColor;
+  width: 100%;
+  height: 100%;
+
+  > * {
+    width: 100%;
+  }
+  &.hidden {
+    display: none;
+  }
+  .header {
+    background-color: $blueColor;
+    @extend %flex_row_between;
+    padding: 10px 5px;
+    .info {
+      @extend %flex_row_start;
+      .avatar {
+        @extend %boder_cycle;
+        @extend %icon_small_size;
+        margin-right: 10px;
+        overflow: hidden;
+        img {
+          @extend %icon_small_size;
+        }
+      }
+      .name {
+      }
+    }
+    .closeButton {
+      @extend %icon_small_size;
+      overflow: hidden;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+  .body {
+    background-color: $whiteColor;
+    width: 100%;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 1;
+    .content {
+    }
+    .loading {
+      width: 100%;
+      height: 100%;
+      @extend %flex_center;
+    }
+  }
+  .footer {
+    @extend %flex_row_between;
+    padding: 10px;
+    .chatInput {
+      flex: 1;
+      padding: 0px 10px;
+      input {
+        width: 100%;
+        outline: none;
+        border: 2px solid $grayColor;
+        padding: 5px 10px;
+      }
+    }
+    .sendButton {
+      @extend %icon_small_size;
+      padding: 5px;
+      svg {
+        path {
+          transition: 0.5s;
+          stroke: $grayColorLv1;
+          fill: $grayColor;
+        }
+      }
+
+      &.active {
+        svg {
+          cursor: pointer;
+          path {
+            stroke: $blueColor;
+          }
+          &:hover {
+            path {
+              fill: $blueColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

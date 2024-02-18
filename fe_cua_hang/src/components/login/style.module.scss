@@ -1,0 +1,48 @@
+@import "./src/scss/importer";
+
+.loginWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login {
+    width: 500px;
+    max-width: 100%;
+    > * {
+      width: 100%;
+    }
+    .header {
+    }
+    .body {
+      .error {
+        color: red;
+        display: block;
+      }
+      .inputGroup {
+        width: 100%;
+        textarea {
+          width: 100%;
+        }
+        label {
+          width: fit-content;
+        }
+        input[type="text"] {
+          display: block;
+          width: 100%;
+        }
+        input[type="button"] {
+          display: block;
+          padding: 5px 10px;
+          background-color: $blueColor;
+          outline: none;
+          border: none;
+          color: $whiteColor;
+        }
+
+        margin-bottom: 20px;
+      }
+    }
+    .footer {
+    }
+  }
+}

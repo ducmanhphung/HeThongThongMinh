@@ -1,0 +1,12 @@
+@import "./src/scss/importer";
+
+.headerSlideItemWrapper {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  @extend %flex_center;
+  background-color: $whiteColor;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

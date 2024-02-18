@@ -1,0 +1,65 @@
+@import "./src/scss/importer";
+
+.pageWrapper {
+  .page {
+    .header {
+    }
+    .body {
+      padding: 20px;
+      .info {
+        background-color: $orangeColor;
+        padding: 20px;
+        span {
+          display: block;
+        }
+        .maDonHang {
+          font-size: 1.4rem;
+        }
+      }
+      .danhSach {
+        background-color: $grayColor;
+        padding: 20px;
+        margin-top: 10px;
+        .item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          background-color: $whiteColor;
+          padding: 5px 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .hinhAnh {
+            img {
+              width: auto;
+              height: 50px;
+            }
+          }
+          .tenThuoc {
+            font-weight: bold;
+            @include mi_limit-line(2);
+            width: 200px;
+            max-width: 50%;
+            line-height: 1.1rem;
+            height: 2.2rem;
+          }
+          .donGia {
+          }
+          .soLuong {
+          }
+          .thanhTien {
+          }
+        }
+      }
+      .moreInfo {
+        margin-top: 20px;
+        background-color: $blueColor;
+        .tongTien {
+          color: $whiteColor;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

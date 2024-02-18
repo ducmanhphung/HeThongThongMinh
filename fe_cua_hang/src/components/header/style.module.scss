@@ -1,0 +1,26 @@
+@import "./src/scss/importer";
+
+.headerWrapper {
+  .header {
+    background-color: $blueColor;
+    ul {
+      list-style-type: none;
+    }
+    .items {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .item {
+        .headerItem {
+          a {
+            display: block;
+            padding: 10px 20px;
+            color: $whiteColor;
+            text-decoration: none;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

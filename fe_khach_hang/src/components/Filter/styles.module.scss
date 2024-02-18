@@ -1,0 +1,20 @@
+.filterWrapper {
+  padding: 20px;
+  .filterBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    .selectBox {
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      select {
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+      }
+    }
+  }
+}

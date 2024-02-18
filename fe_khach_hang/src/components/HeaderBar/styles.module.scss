@@ -1,0 +1,47 @@
+@import "./src/scss/importer";
+
+.headerBarWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  > * {
+    width: 100%;
+  }
+  .banner {
+    background-color: $blueColor;
+    @extend %flex_row_between;
+    padding: 20px 10px;
+    .logo {
+      flex: 1;
+    }
+    .search {
+      flex: 1;
+      padding: 0px 20px;
+      input {
+        @extend %famus_text_input;
+      }
+    }
+    .functions {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      > * {
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      .tenNguoiDung {
+        a {
+          text-decoration: none;
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  .slide {
+  }
+}

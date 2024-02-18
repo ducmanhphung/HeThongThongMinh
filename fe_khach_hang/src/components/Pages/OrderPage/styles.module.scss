@@ -1,0 +1,56 @@
+@import "./src/scss/importer";
+
+.orderPageWrapper {
+  .simpleHeader {
+  }
+  .orderPage {
+    .body {
+      .orderLines {
+        padding: 20px;
+        background-color: $grayColor;
+        margin: 20px;
+        border-radius: 10px;
+        .line {
+          background-color: $whiteColor;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $textColor;
+          font-size: 1.2rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .infos {
+            width: 50%;
+            .info {
+              .label {
+                font-size: 1.3rem;
+              }
+              .value {
+              }
+            }
+          }
+          .status {
+            width: 200px;
+            text-align: center;
+          }
+          .method {
+            width: 100px;
+            button {
+              background-color: $dangerColor;
+              color: $whiteColor;
+              width: 100%;
+              outline: none;
+              padding: 5px 10px;
+              border: none;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "./src/scss/importer";
+
+.productPageWrapper {
+  .simpleHeader {
+  }
+  .waiting {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product {
+    // background-color: $blueColor;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 50px;
+    color: $whiteColor;
+    align-items: flex-start;
+    .baseInfo {
+      width: 100%;
+      background-color: $whiteColor;
+      margin-bottom: 20px;
+      .image {
+        width: auto;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+      .info {
+        padding: 0px 20px;
+        background-color: $whiteColor;
+        color: $textColor;
+        .name {
+          span {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+        .money {
+          font-size: 1.3rem;
+          margin-top: 10px;
+          .price {
+          }
+          .unit {
+          }
+        }
+        .add2Cart {
+          margin-top: 20px;
+          button {
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            color: $whiteColor;
+            background-color: $orangeColor;
+            border-radius: 10px;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .detailsInfo {
+      background-color: $blueColor;
+      padding: 20px;
+      border-radius: 10px;
+      .detailsInfoItem {
+        background-color: $whiteColor;
+        border-radius: 10px;
+        color: $textColor;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .title {
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+        .content {
+          font-size: 1.1rem;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.dsThuocLienQuan {
+  padding: 20px;
+}
+.titleSpLienQuan {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}

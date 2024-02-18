@@ -1,0 +1,43 @@
+@import "./src/scss/importer";
+
+.buttonWrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: $whiteColor;
+    a {
+      text-decoration: none;
+      color: $whiteColor;
+    }
+    &:hover {
+      background-color: $whiteColor;
+      a {
+        color: $textColor;
+      }
+    }
+  }
+
+  &.active {
+    button {
+      background-color: $whiteColor;
+      a {
+        color: $textColor;
+      }
+      &:hover {
+        background-color: $orangeColor;
+        a {
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+}

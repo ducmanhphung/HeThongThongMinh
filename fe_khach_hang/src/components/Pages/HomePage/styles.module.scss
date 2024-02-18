@@ -1,0 +1,37 @@
+@import "./src/scss/importer";
+
+.homePageWrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  .chatBox {
+    width: 400px;
+    height: 600px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .products {
+    background-color: $blueColor;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .loadingMore {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+  .link2Cart {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: $whiteColor;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid $orangeColor;
+  }
+}
